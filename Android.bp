@@ -7,6 +7,7 @@ soong_namespace {
         "device/tecno/mt6789-common",
         "hardware/mediatek",
         "hardware/mediatek/libmtkperf_client",
+        "hardware/mediatek/libaedv",
         "hardware/millennium",
     ],
 }
@@ -2115,37 +2116,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fsfingerprint.default",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/fsfingerprint.default.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libbinder",
-                "libutils",
-                "libcutils",
-                "libtinyxml2",
-                "libc",
-                "libc++",
-                "libMcClient",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "gps.default",
     owner: "tecno",
     strip: {
@@ -2900,45 +2870,6 @@ cc_prebuilt_library_shared {
                 "libaedv",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.fptool.fingerprint@2.0-impl",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "libhidlbase",
-                "libhidltransport",
-                "libhardware",
-                "libbinder",
-                "vendor.fptool.fingerprint@2.0",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "android.hidl.memory.token@1.0",
-                "libhidlmemory",
-                "libc",
-                "libz",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -23188,65 +23119,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.fptool.fingerprint@2.0-adapter-helper",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.fptool.fingerprint@2.0",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.fptool.fingerprint@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhidltransport",
-                "libhwbinder",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.apuware.apusys@2.0",
     owner: "tecno",
     strip: {
@@ -25128,15 +25000,6 @@ android_app_import {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.biometrics.fingerprint@2.1-service.xml",
-    owner: "tecno",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "android.hardware.neuralnetworks-shim-service-mtk.xml",
     owner: "tecno",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks-shim-service-mtk.xml",
@@ -25462,38 +25325,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.biometrics.fingerprint@2.1-service",
-    owner: "tecno",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libhardware",
-                "libutils",
-                "vendor.mediatek.hardware.mtkpower@1.0",
-                "android.hardware.biometrics.fingerprint@2.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
     soc_specific: true,
 }
 
@@ -25861,39 +25692,6 @@ cc_prebuilt_binary {
                 "android.hardware.tetheroffload.control@1.0",
                 "android.hardware.tetheroffload.control@1.1",
                 "vendor.mediatek.hardware.netdagent@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.fptool.fingerprint@2.0-service",
-    owner: "tecno",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.fptool.fingerprint@2.0-service",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbase",
-                "libhidlbase",
-                "libhidltransport",
-                "libhardware",
-                "vendor.fptool.fingerprint@2.0",
                 "libc++",
                 "libc",
                 "libm",
