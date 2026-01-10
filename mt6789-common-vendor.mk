@@ -174,7 +174,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     audio.primary.mediatek \
-    audio.r_submix.mediatek \
     gps.default \
     hwcomposer.mtk_common \
     kmsetkey.trustonic \
@@ -1026,7 +1025,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_libvpudv3a_vcodec_so \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6789_so \
-    vendor_lib64_hw_audio_r_submix_mt6789_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
     vendor_lib64_hw_gatekeeper_default_so \
