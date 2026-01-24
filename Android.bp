@@ -12183,35 +12183,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libwifi-hal-mtk",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwifi-hal-mtk.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "liblog",
-                "libnl",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libwpfa",
     owner: "tecno",
     strip: {
@@ -23184,38 +23155,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.audio@6.1",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio@6.0",
-                "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
