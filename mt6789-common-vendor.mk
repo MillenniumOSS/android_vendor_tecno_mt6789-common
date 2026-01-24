@@ -545,7 +545,6 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_nn \
     libvpu \
     libvpu5 \
-    libwifi-hal-mtk \
     libwpfa \
     libwvhidl \
     libwvdrmengine \
@@ -889,7 +888,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
