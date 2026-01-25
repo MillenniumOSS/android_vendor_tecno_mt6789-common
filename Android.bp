@@ -13,153 +13,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "AVCSecureVdecCA",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/AVCSecureVdecCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/AVCSecureVdecCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "HEVCSecureVdecCA",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/HEVCSecureVdecCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/HEVCSecureVdecCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "VP9SecureVdecCA",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/VP9SecureVdecCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/VP9SecureVdecCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
     owner: "tecno",
     strip: {
@@ -205,98 +58,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libAVCSecureVencCA",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libAVCSecureVencCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libAVCSecureVencCA.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libcutils",
-                "libutils",
-                "libgz_uree",
-                "libgz_gp_client",
-                "libdmabufheap",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libbwc",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libbwc.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbwc.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -415,131 +176,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libhevce_sb.ca7.android",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libhevce_sb.ca7.android.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_oal",
-                "libvcodec_utility",
-                "libc",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libhevce_sb.ca7.android.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_oal",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libion_mtk",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libion_mtk.so",
-            ],
-            shared_libs: [
-                "libion",
-                "liblog",
-                "libion_ulit",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_mtk.so",
-            ],
-            shared_libs: [
-                "libion",
-                "liblog",
-                "libion_ulit",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libion_ulit",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libion_ulit.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libladder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libion_ulit.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "liblog",
-                "libladder",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libipsec_ims_shr",
     owner: "tecno",
     strip: {
@@ -568,47 +204,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libcrypto",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libladder",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libladder.so",
-            ],
-            shared_libs: [
-                "libunwindstack",
-                "liblog",
-                "libbase",
                 "libc++",
                 "libc",
                 "libm",
@@ -733,121 +328,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libthha",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libthha.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-                "liblog",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libthha.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_oal",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvcodec_oal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libmtk_drvb",
-                "libmtkperf_client_vendor",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvcodec_oal.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodecdrv_header_stub",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvcodecdrv_header_stub.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvcodecdrv_header_stub.so",
-            ],
-            shared_libs: [
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libverno",
     owner: "tecno",
     strip: {
@@ -918,86 +398,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "arm.graphics-V1-ndk_platform",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtk_drvb",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libmtk_drvb.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/mt6789/libmtk_drvb.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.videotelephony@1.0",
     owner: "tecno",
     strip: {
@@ -1036,232 +436,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libHEVCdec_sa.ca7.android",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so",
-            ],
-            shared_libs: [
-                "libvcodec_oal",
-                "libpowerhalwrap_vendor",
-                "libthha",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libh264dec_customize",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libh264dec_customize.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libh264dec_sa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libh264dec_sa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvcodec_utility",
-                "libvcodec_oal",
-                "libh264dec_customize",
-                "liblog",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libh264dec_sd.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libh264dec_sd.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvcodec_utility",
-                "libvcodec_oal",
-                "libh264dec_customize",
-                "liblog",
-                "libpowerhalwrap_vendor",
-                "libthha",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libh264dec_se.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libh264dec_se.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvcodec_utility",
-                "libvcodec_oal",
-                "libh264dec_customize",
-                "liblog",
-                "libpowerhalwrap_vendor",
-                "libthha",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libh264enc_sa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libh264enc_sa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libvcodec_oal",
-                "libvcodec_utility",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmp4enc_sa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmp4enc_sa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_oal",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmp4enc_xa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmp4enc_xa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility",
-                "libvcodec_oal",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -1324,34 +498,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libvcodec_utility_plat.mt6789",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvcodec_utility_plat.mt6789.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvolte_core_shr",
     owner: "tecno",
     strip: {
@@ -1400,240 +546,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvp8dec_sa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvp8dec_sa.ca7.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libvcodec_oal",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvp8enc_sa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvp8enc_sa.ca7.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libvcodec_oal",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvp9dec_sa.ca7",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvp9dec_sa.ca7.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_oal",
-                "libpowerhalwrap_vendor",
-                "libthha",
-                "libc++",
-                "libdl",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_utility",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libvcodec_utility.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodec_utility_v3a",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libvcodec_utility_v3a.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbwc",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodecdrv",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libvcodecdrv.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility",
-                "libvcodec_utility_plat.mt6789",
-                "libvcodec_oal",
-                "libmtk_drvb",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvcodecdrv_v3a",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libvcodecdrv_v3a.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libvcodec_utility_v3a",
-                "libvcodec_oal",
-                "libmtk_drvb",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvpudv3a_vcodec",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/mt6789/libvpudv3a_vcodec.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvcodecdrv_v3a",
-                "libvcodec_utility_v3a",
-                "liblog",
-                "libion",
-                "libion_mtk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
 }
@@ -7989,6 +6901,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbwc",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbwc.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libc++_shared",
     owner: "tecno",
     strip: {
@@ -9710,6 +8649,61 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libion_mtk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libion_mtk.so",
+            ],
+            shared_libs: [
+                "libion",
+                "liblog",
+                "libion_ulit",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libion_ulit",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libion_ulit.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libladder",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libispcameraca",
     owner: "tecno",
     strip: {
@@ -9836,6 +8830,33 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libladder",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libladder.so",
+            ],
+            shared_libs: [
+                "libunwindstack",
+                "liblog",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -11704,6 +10725,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libthha",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libthha.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libdl",
+                "libc",
+                "libm",
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtlcWidevineModularDrm",
     owner: "tecno",
     strip: {
@@ -12277,6 +11323,32 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "mediadrm",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "arm.graphics-V1-ndk_platform",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
 }
@@ -19440,6 +18512,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmtk_drvb",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6789/libmtk_drvb.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6789",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmtkcam.atmseventmgr",
     owner: "tecno",
     strip: {
@@ -26038,37 +25138,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "v3avpud.mt6789",
-    owner: "tecno",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/mt6789/v3avpud.mt6789",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libvpudv3a_vcodec",
-                "libvcodec_utility_v3a",
-                "liblog",
-                "libion",
-                "libaedv",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "mt6789",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "mtk_agpsd",
     owner: "tecno",
     target: {
@@ -26528,62 +25597,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "bin/jpegtool",
     symlink_target: "/vendor/bin/mt6789/jpegtool",
-}
-
-install_symlink {
-    name: "vendor_bin_v3avpud",
-    soc_specific: true,
-    installed_location: "bin/v3avpud",
-    symlink_target: "/vendor/bin/mt6789/v3avpud.mt6789",
-}
-
-install_symlink {
-    name: "vendor_lib_arm_graphics-V1-ndk_platform_so",
-    soc_specific: true,
-    installed_location: "lib/arm.graphics-V1-ndk_platform.so",
-    symlink_target: "/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libmtk_drvb_so",
-    soc_specific: true,
-    installed_location: "lib/libmtk_drvb.so",
-    symlink_target: "/vendor/lib/mt6789/libmtk_drvb.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libvcodec_utility_so",
-    soc_specific: true,
-    installed_location: "lib/libvcodec_utility.so",
-    symlink_target: "/vendor/lib/mt6789/libvcodec_utility.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libvcodec_utility_v3a_so",
-    soc_specific: true,
-    installed_location: "lib/libvcodec_utility_v3a.so",
-    symlink_target: "/vendor/lib/mt6789/libvcodec_utility_v3a.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libvcodecdrv_so",
-    soc_specific: true,
-    installed_location: "lib/libvcodecdrv.so",
-    symlink_target: "/vendor/lib/mt6789/libvcodecdrv.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libvcodecdrv_v3a_so",
-    soc_specific: true,
-    installed_location: "lib/libvcodecdrv_v3a.so",
-    symlink_target: "/vendor/lib/mt6789/libvcodecdrv_v3a.so",
-}
-
-install_symlink {
-    name: "vendor_lib_libvpudv3a_vcodec_so",
-    soc_specific: true,
-    installed_location: "lib/libvpudv3a_vcodec.so",
-    symlink_target: "/vendor/lib/mt6789/libvpudv3a_vcodec.so",
 }
 
 install_symlink {
