@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/tecno/mt6789-common
 
 PRODUCT_COPY_FILES += \
+    vendor/tecno/mt6789-common/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/tecno/mt6789-common/proprietary/vendor/data/camera/vidhance/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/data/camera/vidhance/vidhance_calibration \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/AbnormalDisplayLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/AbnormalDisplayLog_dynamic.xml \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/VideoLog_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.xml \
@@ -119,7 +120,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA \
     libbwc \
-    libccci_util \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
@@ -127,9 +127,6 @@ PRODUCT_PACKAGES += \
     libion_ulit \
     libipsec_ims_shr \
     libladder \
-    libmtkcutils \
-    libmtkproperty \
-    libmtkrillog \
     libthha \
     libvcodec_oal \
     libvcodecdrv_header_stub \
@@ -412,6 +409,7 @@ PRODUCT_PACKAGES += \
     libcamalgo.warp \
     libcares_naptr \
     libcarrierconfig \
+    libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
     libcodec2_mtk_c2store \
@@ -469,6 +467,7 @@ PRODUCT_PACKAGES += \
     libmtkcam_pipelinepolicy-aov \
     libmtkconfig \
     libmtkconfigutils \
+    libmtkcutils \
     libmtkhardware_legacy \
     libmtkisp_metadata \
     libmtkisp_metadata_v2 \
@@ -476,6 +475,8 @@ PRODUCT_PACKAGES += \
     libmtkmipc-ril \
     libmtknetcap \
     libmtknetutils \
+    libmtkproperty \
+    libmtkrillog \
     libmtkrilutils \
     libmtkshifter_vendor \
     libmtksysutils \
@@ -496,7 +497,7 @@ PRODUCT_PACKAGES += \
     libmvpu_runtime_pub \
     libmvpuop_mtk_cv \
     libmvpuop_mtk_nn \
-    libneuron_graph_delegate.mtk \
+    libneuron_graph_delegate.mtk_vendor \
     libnir_neon_driver_ndk.mtk.vndk \
     libnnp \
     libnpagent \
@@ -518,7 +519,7 @@ PRODUCT_PACKAGES += \
     libspeechparser_vendor \
     libstorage_otp \
     libsysenv \
-    libtflite_mtk \
+    libtflite_mtk_vendor \
     libtlcWidevineModularDrm \
     libtrm \
     libudf \
@@ -876,10 +877,10 @@ PRODUCT_PACKAGES += \
     s5kjn1_mipi_raw_IdxMgr \
     s5kjn1_mipi_raw_tuning \
     libmtkcam_streaminfo_plugin-p1stt \
-    vendor.mediatek.hardware.apuware.apusys@2.0 \
-    vendor.mediatek.hardware.apuware.apusys@2.1 \
-    vendor.mediatek.hardware.apuware.hmp@1.0 \
-    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0_vendor \
+    vendor.mediatek.hardware.apuware.apusys@2.1_vendor \
+    vendor.mediatek.hardware.apuware.hmp@1.0_vendor \
+    vendor.mediatek.hardware.apuware.utils@2.0_vendor \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
@@ -935,6 +936,41 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libapuwareapusys.mtk \
+    libapuwareapusys_v2.mtk \
+    libapuwarehmp.mtk \
+    libapuwareutils.mtk \
+    libapuwareutils_v2.mtk \
+    libapuwarexrp.mtk \
+    libapuwarexrp_v2.mtk \
+    libarmnn_ndk.mtk \
+    libcmdl_ndk.mtk \
+    libmvpu_cic_ci_compiler.mtk \
+    libmvpu_clc_mvpu_debuginfo.mtk \
+    libmvpu_clc_mvpu_elf.mtk \
+    libmvpu_clc_mvpu_utility.mtk \
+    libmvpu_config.mtk \
+    libmvpu_engine.mtk \
+    libmvpu_engine_pub.mtk \
+    libmvpu_pattern.mtk \
+    libmvpu_pattern_pub.mtk \
+    libmvpu_runtime.mtk \
+    libmvpu_runtime_pub.mtk \
+    libmvpuop_mtk_cv.mtk \
+    libmvpuop_mtk_nn.mtk \
+    libneuron_graph_delegate.mtk \
+    libneuronusdk_adapter.mtk \
+    libnir_neon_driver_ndk.mtk \
+    libtflite_mtk.mtk \
+    libtflite_mtk \
+    vendor.mediatek.hardware.apuware.apusys@1.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.0 \
+    vendor.mediatek.hardware.apuware.apusys@2.1 \
+    vendor.mediatek.hardware.apuware.hmp@1.0 \
+    vendor.mediatek.hardware.apuware.utils@1.0 \
+    vendor.mediatek.hardware.apuware.utils@2.0 \
+    vendor.mediatek.hardware.apuware.xrp@1.0 \
+    vendor.mediatek.hardware.apuware.xrp@2.0 \
     GpuGameDriver.mt6789 \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
