@@ -134,7 +134,7 @@ PRODUCT_PACKAGES += \
     libwo \
     arm.graphics-V1-ndk_platform \
     libmtk_drvb \
-    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
     libh264dec_sa.ca7 \
