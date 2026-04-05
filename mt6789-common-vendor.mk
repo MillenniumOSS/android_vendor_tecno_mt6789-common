@@ -367,6 +367,8 @@ PRODUCT_PACKAGES += \
     libapu_mdw_batch \
     libapusys \
     libapusys_edma \
+    libarm_egl_properties_sysprop \
+    libarm_gralloc_properties_sysprop \
     libarmnn \
     libarmnn_ndk.mtk.vndk \
     libaudio_param_parser-vnd \
@@ -459,6 +461,7 @@ PRODUCT_PACKAGES += \
     libjpeg-alpha_vendor \
     libkmsetkey \
     libksensor \
+    liblibarm_mali_config_sysprops \
     libmegface \
     libminiui \
     libmipc \
@@ -550,6 +553,7 @@ PRODUCT_PACKAGES += \
     libwpfa \
     libwvhidl \
     libwvdrmengine \
+    arm.graphics-V3-ndk \
     fake_serial_yuv_IdxMgr \
     fake_serial_yuv_tuning \
     gc08a3_mipi_raw_IdxMgr \
@@ -1076,6 +1080,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_vulkan_mali_so \
     vendor_lib64_hw_sensors_mt6789_so \
     vendor_lib64_arm_graphics-V1-ndk_platform_so \
+    vendor_lib64_arm_graphics-V3-ndk_so \
     vendor_lib64_fake_serial_yuv_IdxMgr_so \
     vendor_lib64_fake_serial_yuv_tuning_so \
     vendor_lib64_gc08a3_mipi_raw_IdxMgr_so \
