@@ -42,6 +42,11 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/gralloc/dpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu.xml \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
@@ -93,6 +98,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
