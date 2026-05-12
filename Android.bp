@@ -8350,170 +8350,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.0-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.0-v31.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk-v31",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui-v34",
-                "libutils",
-                "libstagefright_bufferqueue_helper-v31",
-                "libcodec2_hidl_plugin-v31",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.1-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.1-v31.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0-v31",
-                "libcodec2_vndk-v31",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui-v34",
-                "libutils",
-                "libstagefright_bufferqueue_helper-v31",
-                "libcodec2_hidl_plugin-v31",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl@1.2-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.2-v31.so",
-            ],
-            shared_libs: [
-                "libbase_shim",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.0",
-                "android.hardware.media@1.0",
-                "android.hardware.media.bufferpool@2.0",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "android.hardware.media.omx@1.0",
-                "libbase",
-                "libcodec2",
-                "libcodec2_hidl@1.0-v31",
-                "libcodec2_hidl@1.1-v31",
-                "libcodec2_vndk-v31",
-                "libcutils",
-                "libhidlbase",
-                "liblog",
-                "libstagefright_bufferpool@2.0.1",
-                "libui-v34",
-                "libutils",
-                "libstagefright_bufferqueue_helper-v31",
-                "libcodec2_hidl_plugin-v31",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_plugin-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl_plugin-v31.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk-v31",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcodec2_mtk_c2store",
     owner: "tecno",
     strip: {
@@ -8525,14 +8361,14 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_c2store.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common-v31",
+                "libcodec2_soft_common",
                 "libcutils",
                 "liblog",
-                "libsfplugin_ccodec_utils-v31",
+                "libsfplugin_ccodec_utils",
                 "libstagefright_foundation-v33",
                 "libbase",
                 "libcodec2",
-                "libcodec2_vndk-v31",
+                "libcodec2_vndk",
                 "libutils",
                 "libion",
                 "libion_mtk",
@@ -8564,21 +8400,21 @@ cc_prebuilt_library_shared {
                 "libformatter",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
-                "libui-v34",
+                "libui",
                 "libgralloc_extra",
                 "libexpat",
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
                 "libged",
-                "libcodec2_soft_common-v31",
+                "libcodec2_soft_common",
                 "libcutils",
                 "liblog",
-                "libsfplugin_ccodec_utils-v31",
+                "libsfplugin_ccodec_utils",
                 "libstagefright_foundation-v33",
                 "libbase",
                 "libcodec2",
-                "libcodec2_vndk-v31",
+                "libcodec2_vndk",
                 "libutils",
                 "libion",
                 "libdmabufheap",
@@ -8613,98 +8449,26 @@ cc_prebuilt_library_shared {
                 "libformatter",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
-                "libui-v34",
+                "libui",
                 "libgralloc_extra",
                 "libexpat",
                 "libsync",
                 "libhidlbase",
                 "libhwbinder",
                 "libged",
-                "libcodec2_soft_common-v31",
+                "libcodec2_soft_common",
                 "libcutils",
                 "liblog",
-                "libsfplugin_ccodec_utils-v31",
+                "libsfplugin_ccodec_utils",
                 "libstagefright_foundation-v33",
                 "libbase",
                 "libcodec2",
-                "libcodec2_vndk-v31",
+                "libcodec2_vndk",
                 "libutils",
                 "libion",
                 "libdmabufheap",
                 "libion_mtk",
                 "libcodec2_mtk_c2store",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_soft_common-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_common-v31.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk-v31",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libsfplugin_ccodec_utils-v31",
-                "libstagefright_foundation-v33",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_vndk-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcodec2_vndk-v31.so",
-            ],
-            shared_libs: [
-                "android.hardware.graphics.bufferqueue@2.0",
-                "android.hardware.graphics.common@1.2",
-                "android.hardware.media.bufferpool@2.0",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libhidlbase",
-                "libion",
-                "libdmabufheap",
-                "libfmq",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
-                "libstagefright_bufferpool@2.0.1",
-                "libui-v34",
-                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -8729,11 +8493,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vpp_qt_plugin.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common-v31",
-                "libsfplugin_ccodec_utils-v31",
+                "libcodec2_soft_common",
+                "libsfplugin_ccodec_utils",
                 "libstagefright_foundation-v33",
                 "libcodec2",
-                "libcodec2_vndk-v31",
+                "libcodec2_vndk",
                 "liblog",
                 "libbase",
                 "libutils",
@@ -8762,11 +8526,11 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_vpp_rs_plugin.so",
             ],
             shared_libs: [
-                "libcodec2_soft_common-v31",
-                "libsfplugin_ccodec_utils-v31",
+                "libcodec2_soft_common",
+                "libsfplugin_ccodec_utils",
                 "libstagefright_foundation-v33",
                 "libcodec2",
-                "libcodec2_vndk-v31",
+                "libcodec2_vndk",
                 "liblog",
                 "libbase",
                 "libutils",
@@ -11603,38 +11367,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsfplugin_ccodec_utils-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsfplugin_ccodec_utils-v31.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk-v31",
-                "libcutils",
-                "liblog",
-                "libnativewindow",
-                "libstagefright_foundation-v33",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libspeech_enh_lib",
     owner: "tecno",
     strip: {
@@ -11676,41 +11408,6 @@ cc_prebuilt_library_shared {
                 "libaudioutils",
                 "libmedia_helper",
                 "libxml2",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libstagefright_bufferqueue_helper-v31",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-v31.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libstagefright_foundation",
-                "libui",
-                "libutils",
-                "android.hardware.graphics.bufferqueue@1.0",
-                "android.hardware.graphics.bufferqueue@2.0",
-                "libgui",
                 "libc++",
                 "libc",
                 "libm",
@@ -26195,15 +25892,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_media_c2_V1_2_default.xml",
-    owner: "tecno",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
     owner: "tecno",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
@@ -26467,48 +26155,6 @@ cc_prebuilt_binary {
                 "android.hardware.gnss.visibility_control@1.0",
                 "android.hardware.gnss-V1-ndk",
                 "android.hardware.gnss-impl-mediatek",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.media.c2@1.2-mediatek-64b",
-    owner: "tecno",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
-            ],
-            shared_libs: [
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0-v31",
-                "libcodec2_hidl@1.1-v31",
-                "libcodec2_hidl@1.2-v31",
-                "libcodec2_vndk-v31",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libbinder",
-                "libcodec2_mtk_c2store",
-                "libcodec2_mtk_vdec",
-                "libcodec2_mtk_venc",
                 "libc++",
                 "libc",
                 "libm",
