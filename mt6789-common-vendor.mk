@@ -68,15 +68,9 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.nxp.nfc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nxp.nfc.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.otg.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.otg.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.thermal_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal_core.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.volte_imcb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imcb.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.volte_imsm_93.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_imsm_93.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.volte_stack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_stack.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.volte_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_ua.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/init.wod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wod.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
@@ -123,7 +117,6 @@ PRODUCT_PACKAGES += \
     AVCSecureVdecCA \
     HEVCSecureVdecCA \
     VP9SecureVdecCA \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA \
     libbwc \
     libgz_gp_client \
@@ -131,16 +124,12 @@ PRODUCT_PACKAGES += \
     libhevce_sb.ca7.android \
     libion_mtk \
     libion_ulit \
-    libipsec_ims_shr \
     libladder \
     libthha \
     libvcodec_oal \
     libvcodecdrv_header_stub \
-    libverno \
-    libwo \
     arm.graphics-V1-ndk_platform \
     libmtk_drvb \
-    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
     libh264dec_sa.ca7 \
@@ -149,11 +138,7 @@ PRODUCT_PACKAGES += \
     libh264enc_sa.ca7 \
     libmp4enc_sa.ca7 \
     libmp4enc_xa.ca7 \
-    librcs_interface \
-    librcs_volte_core \
     libvcodec_utility_plat.mt6789 \
-    libvolte_core_shr \
-    libvolte_xdmc_shr \
     libvp8dec_sa.ca7 \
     libvp8enc_sa.ca7 \
     libvp9dec_sa.ca7 \
@@ -162,7 +147,6 @@ PRODUCT_PACKAGES += \
     libvcodecdrv \
     libvcodecdrv_v3a \
     libvpudv3a_vcodec \
-    vendor.mediatek.hardware.rcs@2.0 \
     APUWareApusysServer \
     APUWareHmpServer \
     APUWareUtilsServer \
@@ -192,6 +176,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
     vendor.mediatek.hardware.mms@1.6-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
     lbs_hidl_service-impl \
     lib3a.ae.pipe \
     libBasicModule \
@@ -455,6 +440,7 @@ PRODUCT_PACKAGES += \
     libimagebuffer_wrapper \
     libimgsensorca \
     libimsg_log \
+    libipsec_ims_shr \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
@@ -520,6 +506,8 @@ PRODUCT_PACKAGES += \
     libpower_timer \
     libpqframework \
     libratconfig \
+    librcs_interface \
+    librcs_volte_core \
     librgbwlightsensor \
     librilfusion \
     librpc \
@@ -942,6 +930,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
+    vendor.mediatek.hardware.rcs@2.0 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
@@ -1031,15 +1021,10 @@ PRODUCT_PACKAGES += \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
-    rcs_volte_stack \
+    rcs_volte_stack64 \
     thermal_core \
     volte_clientapi_ua \
-    volte_imcb \
-    volte_imsm_93 \
-    volte_md_status \
-    volte_rcs_ua \
-    volte_stack \
-    volte_ua \
+    volte_rcs_ua64 \
     wlan_assistant \
     wmt_launcher \
     wmt_loader
