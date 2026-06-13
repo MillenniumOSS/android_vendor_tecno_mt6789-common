@@ -50,6 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
@@ -87,12 +88,11 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/tetheroffloadservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tetheroffloadservice.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/trustonic.mc_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.mc_kmsetkey_ca.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/v3avpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/v3avpud.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.7-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
@@ -120,48 +120,22 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
-    AVCSecureVdecCA \
-    HEVCSecureVdecCA \
-    VP9SecureVdecCA \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
-    libAVCSecureVencCA \
     libbwc \
     libgz_gp_client \
     libgz_uree \
-    libhevce_sb.ca7.android \
-    libion_mtk \
-    libion_ulit \
     libipsec_ims_shr \
     libladder \
     libthha \
-    libvcodec_oal \
-    libvcodecdrv_header_stub \
     libverno \
     libwo \
     arm.graphics-V1-ndk_platform \
     libmtk_drvb \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
-    libHEVCdec_sa.ca7.android \
-    libh264dec_customize \
-    libh264dec_sa.ca7 \
-    libh264dec_sd.ca7 \
-    libh264dec_se.ca7 \
-    libh264enc_sa.ca7 \
-    libmp4enc_sa.ca7 \
-    libmp4enc_xa.ca7 \
     librcs_interface \
     librcs_volte_core \
-    libvcodec_utility_plat.mt6789 \
     libvolte_core_shr \
     libvolte_xdmc_shr \
-    libvp8dec_sa.ca7 \
-    libvp8enc_sa.ca7 \
-    libvp9dec_sa.ca7 \
-    libvcodec_utility \
-    libvcodec_utility_v3a \
-    libvcodecdrv \
-    libvcodecdrv_v3a \
-    libvpudv3a_vcodec \
     vendor.mediatek.hardware.rcs@2.0 \
     APUWareApusysServer \
     APUWareHmpServer \
@@ -185,12 +159,12 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.0-impl \
     vendor.mediatek.hardware.camera.isphal@1.1-impl \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    vendor.mediatek.hardware.pq@2.15-impl \
+    vendor.mediatek.hardware.pq_aidl-impl \
     vulkan.mali \
     sensors.mediatek.V2.0 \
     sound_trigger.primary.mt6789 \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    vendor.mediatek.hardware.mms@1.6-impl \
+    vendor.mediatek.hardware.mms@1.7-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     lbs_hidl_service-impl \
     lib3a.ae.pipe \
@@ -423,6 +397,9 @@ PRODUCT_PACKAGES += \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
+    libcodec2_vpp_AIMEMC_plugin \
+    libcodec2_vpp_AISR_plugin \
+    libcodec2_vpp_mi_plugin \
     libcodec2_vpp_qt_plugin \
     libcodec2_vpp_rs_plugin \
     libcomposer_ext \
@@ -448,6 +425,7 @@ PRODUCT_PACKAGES += \
     libgwsdv3-ril \
     libhdrvideo \
     libheichal \
+    libhevce_sb.ca7.android \
     libhfmanager \
     libhfmanagerwrapper \
     libhwm \
@@ -455,6 +433,8 @@ PRODUCT_PACKAGES += \
     libimagebuffer_wrapper \
     libimgsensorca \
     libimsg_log \
+    libion_mtk \
+    libion_ulit \
     libispcameraca \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
@@ -519,11 +499,16 @@ PRODUCT_PACKAGES += \
     libpn557_fw \
     libpower_timer \
     libpqframework \
+    libpqhdrmetaparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlparser \
     libratconfig \
     librgbwlightsensor \
     librilfusion \
     librpc \
     librt_extamp_intf \
+    libscltm \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstorage_otp \
@@ -533,6 +518,8 @@ PRODUCT_PACKAGES += \
     libtrm \
     libudf \
     liburee_meta_drmkeyinstall \
+    libvcodec_oal \
+    libvcodecdrv_header_stub \
     libvia-ril \
     libviagpsrpc \
     libviamipc-ril \
@@ -916,6 +903,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
+    vendor.mediatek.hardware.mms@1.7 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.mtkradioex@3.0 \
     vendor.mediatek.hardware.netdagent@1.0 \
@@ -932,8 +920,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.11 \
     vendor.mediatek.hardware.pq@2.12 \
     vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.14 \
-    vendor.mediatek.hardware.pq@2.15 \
     vendor.mediatek.hardware.pq@2.2 \
     vendor.mediatek.hardware.pq@2.3 \
     vendor.mediatek.hardware.pq@2.4 \
@@ -942,6 +928,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
+    vendor.mediatek.hardware.pq_aidl-V1-ndk \
     vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
@@ -981,7 +968,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
-    GpuGameDriver.mt6789 \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
     android.hardware.security.secureclock-service.trustonic.xml \
@@ -1005,6 +991,7 @@ PRODUCT_PACKAGES += \
     gsm0710muxd \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
+    android.hardware.graphics.composer@3.1-service \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
@@ -1014,9 +1001,9 @@ PRODUCT_PACKAGES += \
     tetheroffloadservice \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
     vendor.mediatek.hardware.mmagent@1.1-service \
-    vendor.mediatek.hardware.mms@1.6-service \
+    vendor.mediatek.hardware.mms@1.7-service \
     vendor.mediatek.hardware.nvram@1.1-service \
-    vendor.mediatek.hardware.pq@2.2-service \
+    vendor.mediatek.hardware.pq_aidl-service \
     vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
@@ -1027,7 +1014,6 @@ PRODUCT_PACKAGES += \
     mnld \
     dumpfaultd.mt6789 \
     jpegtool \
-    v3avpud.mt6789 \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
@@ -1048,14 +1034,8 @@ PRODUCT_PACKAGES += \
     vendor_bin_hw_camerahalserver \
     vendor_bin_dumpfaultd_mt6789 \
     vendor_bin_jpegtool \
-    vendor_bin_v3avpud \
     vendor_lib_arm_graphics-V1-ndk_platform_so \
     vendor_lib_libmtk_drvb_so \
-    vendor_lib_libvcodec_utility_so \
-    vendor_lib_libvcodec_utility_v3a_so \
-    vendor_lib_libvcodecdrv_so \
-    vendor_lib_libvcodecdrv_v3a_so \
-    vendor_lib_libvpudv3a_vcodec_so \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6789_so \
     vendor_lib64_hw_kmsetkey_default_so \
@@ -1071,7 +1051,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_0-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_isphal@1_1-impl_so \
     vendor_lib64_hw_vendor_mediatek_hardware_camera_lomoeffect@1_0-impl_so \
-    vendor_lib64_hw_vendor_mediatek_hardware_pq@2_15-impl_so \
+    vendor_lib64_hw_vendor_mediatek_hardware_pq_aidl-impl_so \
     vendor_lib64_hw_vulkan_mali_so \
     vendor_lib64_hw_sensors_mt6789_so \
     vendor_lib64_arm_graphics-V1-ndk_platform_so \
