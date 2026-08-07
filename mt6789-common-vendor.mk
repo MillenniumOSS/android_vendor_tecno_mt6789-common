@@ -435,7 +435,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgpu_aux \
     libgpud \
@@ -467,6 +467,7 @@ PRODUCT_PACKAGES += \
     libmml \
     libmmprofile \
     libmnetlink_v104 \
+    libmnl_mtk \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -783,7 +784,6 @@ PRODUCT_PACKAGES += \
     libimageio_plat_drv \
     libimageio_plat_pipe \
     liblpcnr \
-    libmnl \
     libmpbase \
     libmsnr \
     libmtkcam.atmseventmgr \
@@ -1308,7 +1308,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libimageio_plat_drv_so \
     vendor_lib64_libimageio_plat_pipe_so \
     vendor_lib64_liblpcnr_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmpbase_so \
     vendor_lib64_libmsnr_so \
     vendor_lib64_libmtk_drvb_so \
