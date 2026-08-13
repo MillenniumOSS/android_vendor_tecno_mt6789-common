@@ -26833,7 +26833,7 @@ cc_prebuilt_binary {
                 "android.hardware.sensors@1.0",
                 "libhidlbase",
                 "libhidltransport",
-                "libsensorndkbridge",
+                "android.hardware.sensors@1.0-convert-shared",
                 "libc++",
                 "libc",
                 "libm",
