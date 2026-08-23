@@ -95,7 +95,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
@@ -131,7 +130,6 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     libion_ulit \
     libipsec_ims_shr \
-    libladder \
     libthha \
     libvcodec_oal \
     libvcodecdrv_header_stub \
@@ -1039,7 +1037,6 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_stack \
     volte_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
 
