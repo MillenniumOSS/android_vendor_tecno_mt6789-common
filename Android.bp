@@ -161,56 +161,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0-impl",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-                "libc",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-                "libc",
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libbase",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libAVCSecureVencCA",
     owner: "tecno",
     strip: {
@@ -420,47 +370,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libipsec_ims_shr",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libipsec_ims_shr.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libcrypto",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libipsec_ims_shr.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libcrypto",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libthha",
     owner: "tecno",
     strip: {
@@ -576,76 +485,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libverno",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libverno.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libverno.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libwo",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libwo.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libwo.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "arm.graphics-V1-ndk_platform",
     owner: "tecno",
     strip: {
@@ -721,50 +560,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "both",
     relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-    stem: "vendor.mediatek.hardware.videotelephony@1.0",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
     prefer: true,
     soc_specific: true,
 }
@@ -996,63 +791,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "librcs_interface",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librcs_interface.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libhardware",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "librcs_volte_core",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librcs_volte_core.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhardware",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvcodec_utility_plat.mt6789",
     owner: "tecno",
     strip: {
@@ -1072,59 +810,6 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvolte_core_shr",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvolte_core_shr.so",
-            ],
-            shared_libs: [
-                "libvolte_xdmc_shr",
-                "libverno",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvolte_xdmc_shr",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libvolte_xdmc_shr.so",
-            ],
-            shared_libs: [
-                "libverno",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
             ],
         },
     },
@@ -1363,34 +1048,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "32",
     relative_install_path: "mt6789",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.rcs@2.0",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
     prefer: true,
     soc_specific: true,
 }
@@ -2533,6 +2190,38 @@ cc_prebuilt_library_shared {
                 "vendor.mediatek.hardware.nvram@1.1",
                 "libc++",
                 "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony-impl",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony-impl.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libfmq",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk_vendor",
+                "libc",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libbase",
+                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -8101,32 +7790,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcares_naptr",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcares_naptr.so",
-            ],
-            shared_libs: [
-                "libc",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcarrierconfig",
     owner: "tecno",
     strip: {
@@ -8953,36 +8616,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libgwsd-ril",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libgwsd-ril.so",
-            ],
-            shared_libs: [
-                "libmtkcutils",
-                "libmtkutils",
-                "libmtk-ril",
-                "libmtkproperty",
-                "libmtkrillog",
-                "libmtkrilutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libgwsdv2-ril",
     owner: "tecno",
     strip: {
@@ -9285,6 +8918,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libipsec_ims_shr",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libipsec_ims_shr.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libcrypto",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libispcameraca",
     owner: "tecno",
     strip: {
@@ -9513,6 +9173,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmtkrillog",
                 "libtrm",
+                "libmtkproperty",
                 "libc++",
                 "libc",
                 "libm",
@@ -9687,40 +9348,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmtk-fusion-ril-prop-vsim",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtk-fusion-ril-prop-vsim.so",
-            ],
-            shared_libs: [
-                "libmtk-ril",
-                "libutils",
-                "librilfusion",
-                "libmtkrilutils",
-                "librilutils",
-                "libmtkrillog",
-                "libssl",
-                "libcrypto",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmtk-ril",
     owner: "tecno",
     strip: {
@@ -9738,7 +9365,6 @@ cc_prebuilt_library_shared {
                 "libratconfig",
                 "libmtksysutils",
                 "libmtkhardware_legacy",
-                "libsysenv",
                 "libmtkrilutils",
                 "libcrypto",
                 "libmtkcutils",
@@ -9746,37 +9372,12 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "libmtkares",
-                "libmtknetcap",
-                "libwpfa",
-                "libaedv",
+                "vendor.mediatek.hardware.netdagent@1.0",
+                "libhidlbase",
+                "vendor.mediatek.hardware.netdagent-V1-ndk",
+                "libbinder_ndk",
                 "libbinder",
                 "libmipc",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmtkares",
-    owner: "tecno",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmtkares.so",
-            ],
-            shared_libs: [
-                "libcares_naptr",
                 "libc++",
                 "libc",
                 "libm",
@@ -10052,7 +9653,6 @@ cc_prebuilt_library_shared {
                 "libratconfig",
                 "libmtksysutils",
                 "libmtkhardware_legacy",
-                "libsysenv",
                 "libmtkrilutils",
                 "libcrypto",
                 "libmtkcutils",
@@ -10060,10 +9660,10 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "libmtkares",
-                "libmtknetcap",
-                "libwpfa",
-                "libaedv",
+                "vendor.mediatek.hardware.netdagent@1.0",
+                "libhidlbase",
+                "vendor.mediatek.hardware.netdagent-V1-ndk",
+                "libbinder_ndk",
                 "libbinder",
                 "libmipc",
                 "libc++",
@@ -11128,6 +10728,63 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "librcs_interface",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librcs_interface.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libhardware",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librcs_volte_core",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librcs_volte_core.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libhardware",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "librgbwlightsensor",
     owner: "tecno",
     strip: {
@@ -11172,28 +10829,41 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libmtkrillog",
-                "libmtkcutils",
                 "libmtkhardware_legacy",
                 "libmtkrilutils",
                 "libmtkproperty",
-                "libmtkutils",
                 "libmtkconfigutils",
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.3",
-                "android.hardware.radio@1.4",
-                "android.hardware.radio@1.5",
-                "android.hardware.radio@1.6",
-                "android.hardware.radio.config@1.0",
-                "android.hardware.radio.config@1.1",
-                "android.hardware.radio.config@1.2",
-                "android.hardware.radio.config@1.3",
-                "vendor.mediatek.hardware.mtkradioex@3.0",
                 "libbinder",
                 "libhidlbase",
                 "libhidltransport",
-                "libaedv",
+                "libutils",
+                "libbinder_ndk",
+                "android.hardware.radio.data-V2-ndk",
+                "android.hardware.radio.ims-V1-ndk",
+                "android.hardware.radio.messaging-V2-ndk",
+                "android.hardware.radio.modem-V2-ndk",
+                "android.hardware.radio.network-V2-ndk",
+                "android.hardware.radio.sim-V2-ndk",
+                "android.hardware.radio.sap-V1-ndk",
+                "android.hardware.radio.voice-V2-ndk",
+                "android.hardware.radio.config-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.modem-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.data-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.voice-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.network-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.ims-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.assist-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.atci-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.cap-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.em-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.rcs-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.dch-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -11255,6 +10925,33 @@ cc_prebuilt_library_shared {
                 "libcrypto",
                 "libssl",
                 "libfile_op",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsimlock",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsimlock.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -11360,7 +11057,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsysenv.so",
             ],
             shared_libs: [
-                "libbase_shim",
                 "liblog",
                 "libbase",
                 "libc++",
@@ -11449,6 +11145,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libmtkrillog",
+                "libmtkproperty",
                 "libc++",
                 "libc",
                 "libm",
@@ -23235,7 +22932,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.clientapi@1.0",
+    name: "vendor.mediatek.hardware.clientapi-V1-ndk",
     owner: "tecno",
     strip: {
         none: true,
@@ -23243,13 +22940,10 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.clientapi-V1-ndk.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -23650,7 +23344,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkradioex@2.0",
+    name: "vendor.mediatek.hardware.mtkradioex.assist-V1-ndk",
     owner: "tecno",
     strip: {
         none: true,
@@ -23658,19 +23352,11 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.assist-V1-ndk.so",
             ],
             shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.4",
-                "android.hardware.radio@1.5",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -23684,7 +23370,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.mtkradioex@3.0",
+    name: "vendor.mediatek.hardware.mtkradioex.atci-V1-ndk",
     owner: "tecno",
     strip: {
         none: true,
@@ -23692,19 +23378,441 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.atci-V1-ndk.so",
             ],
             shared_libs: [
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.4",
-                "android.hardware.radio@1.5",
-                "android.hidl.safe_union@1.0",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.cap-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.cap-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.data-V2-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.data-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "android.hardware.radio.data-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.assist-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.dch-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.dch-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.em-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.em-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "android.hardware.radio.modem-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.ims-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.ims-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "android.hardware.radio.messaging-V2-ndk",
+                "android.hardware.radio.voice-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.voice-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.modem-V2-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.modem-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.cap-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.atci-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.em-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.network-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.network-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "android.hardware.radio.network-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.rcs-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.rcs-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.mtkradioex.voice-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex.voice-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.radio-V2-ndk",
+                "android.hardware.radio.network-V2-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.netdagent-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -24505,6 +24613,87 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.rcs-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.rcs-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.rcs@2.0",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.rcs@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.mediatek.hardware.videotelephony-V1-ndk_vendor",
+    stem: "vendor.mediatek.hardware.videotelephony-V1-ndk",
+    owner: "tecno",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -25840,8 +26029,8 @@ cc_prebuilt_binary {
                 "libnvram",
                 "libcutils",
                 "libstorage_otp",
-                "libhardware_legacy",
                 "libccci_util",
+                "libhardware_legacy",
                 "libc++",
                 "libc",
                 "libm",
@@ -26088,20 +26277,17 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek",
             ],
             shared_libs: [
-                "vendor.mediatek.hardware.mtkradioex@2.0",
-                "libhidlbase",
+                "libbase",
                 "libutils",
-                "android.hardware.secure_element@1.0",
-                "android.hardware.secure_element@1.1",
-                "android.hardware.secure_element@1.2",
                 "libcutils",
                 "liblog",
-                "android.hardware.radio@1.0",
-                "android.hardware.radio@1.1",
-                "android.hardware.radio@1.2",
-                "android.hardware.radio@1.3",
-                "android.hardware.radio@1.4",
-                "vendor.mediatek.hardware.mtkradioex@3.0",
+                "libbinder_ndk",
+                "android.hardware.secure_element-V1-ndk",
+                "android.hardware.radio-V2-ndk",
+                "android.hardware.radio.sim-V2-ndk",
+                "android.hardware.radio.modem-V2-ndk",
+                "vendor.mediatek.hardware.mtkradioex.sim-V1-ndk",
+                "vendor.mediatek.hardware.mtkradioex.se-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26242,14 +26428,13 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/mtkfusionrild",
             ],
             shared_libs: [
-                "libutils-v32",
                 "libmtkrillog",
                 "libmtkproperty",
                 "libmtkcutils",
                 "librilfusion",
                 "libmtkrilutils",
-                "libsysenv",
                 "libmtkconfigutils",
+                "libmipc",
                 "liblog",
                 "libc++",
                 "libc",
@@ -26536,12 +26721,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vtservice_hidl",
+    name: "vtservice_aidl",
     owner: "tecno",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/vtservice_hidl",
+                "proprietary/vendor/bin/hw/vtservice_aidl",
             ],
             shared_libs: [
                 "libutils",
@@ -26549,11 +26734,9 @@ cc_prebuilt_binary {
                 "liblog",
                 "libbase",
                 "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
-                "libhardware",
-                "libhwbinder",
-                "libhidlbase",
-                "libhidltransport",
+                "vendor.mediatek.hardware.videotelephony-V1-ndk_vendor",
+                "vendor.mediatek.hardware.videotelephony-impl",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26843,6 +27026,32 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "muxreport",
+    owner: "tecno",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/muxreport",
+            ],
+            shared_libs: [
+                "libmtkrillog",
+                "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "netdagent",
     owner: "tecno",
     target: {
@@ -26907,7 +27116,7 @@ cc_prebuilt_binary {
     name: "rcs_volte_stack",
     owner: "tecno",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/rcs_volte_stack",
             ],
@@ -26926,7 +27135,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
@@ -26978,11 +27187,10 @@ cc_prebuilt_binary {
                 "libfmq",
                 "liblog",
                 "libutils",
-                "libhardware",
-                "libhidlbase",
-                "libhidltransport",
                 "libhwbinder",
-                "vendor.mediatek.hardware.clientapi@1.0",
+                "libhardware",
+                "libbinder_ndk",
+                "vendor.mediatek.hardware.clientapi-V1-ndk",
                 "libhardware_legacy",
                 "libc++",
                 "libc",
@@ -27000,90 +27208,10 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "volte_imcb",
-    owner: "tecno",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/volte_imcb",
-            ],
-            shared_libs: [
-                "libvolte_core_shr",
-                "libvolte_xdmc_shr",
-                "libverno",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "volte_imsm_93",
-    owner: "tecno",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/volte_imsm_93",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libverno",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "volte_md_status",
-    owner: "tecno",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/volte_md_status",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libverno",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "volte_rcs_ua",
     owner: "tecno",
     target: {
-        android_arm: {
+        android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/volte_rcs_ua",
             ],
@@ -27098,6 +27226,8 @@ cc_prebuilt_binary {
                 "libhidltransport",
                 "libhwbinder",
                 "vendor.mediatek.hardware.rcs@2.0",
+                "libbinder_ndk",
+                "vendor.mediatek.hardware.rcs-V1-ndk",
                 "libhardware_legacy",
                 "libcrypto",
                 "libnetutils",
@@ -27108,64 +27238,7 @@ cc_prebuilt_binary {
             ],
         },
     },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "volte_stack",
-    owner: "tecno",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/volte_stack",
-            ],
-            shared_libs: [
-                "libvolte_core_shr",
-                "libvolte_xdmc_shr",
-                "libipsec_ims_shr",
-                "libverno",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "volte_ua",
-    owner: "tecno",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/volte_ua",
-            ],
-            shared_libs: [
-                "libvolte_core_shr",
-                "libvolte_xdmc_shr",
-                "libverno",
-                "libcutils",
-                "liblog",
-                "libc",
-                "libdl",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "32",
+    compile_multilib: "64",
     strip: {
         none: true,
     },
