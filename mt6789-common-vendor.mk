@@ -92,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
-    vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/tecno/mt6789-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
@@ -348,7 +347,6 @@ PRODUCT_PACKAGES += \
     libCamera_s5kjn1mipiraw_Video_Zoom2 \
     libJpgEncPipe \
     libMcClient \
-    libMegviiHum \
     libMtkSpeechEnh \
     libOpenCL \
     libSQLiteModule_VER_ALL \
@@ -393,7 +391,6 @@ PRODUCT_PACKAGES += \
     libcam.seninfn3d \
     libcam3_tranelapsedtime \
     libcam3_tranpriorityctrl \
-    libcam3_transerverengine \
     libcamalgo.3dnr \
     libcamalgo.WarpMapResizer \
     libcamalgo.dngop \
@@ -456,7 +453,6 @@ PRODUCT_PACKAGES += \
     libkmsetkey \
     libksensor \
     liblibarm_mali_config_sysprops \
-    libmegface \
     libminiui \
     libmipc \
     libmmagent \
@@ -675,7 +671,6 @@ PRODUCT_PACKAGES += \
     libTranFaceBeauty \
     libTranGenderDetect \
     libTranHumanLight \
-    libTranMegHumanEffect \
     libTranPlatHW \
     libTranSTPRRepair \
     libTranSTSingleBlur \
@@ -901,7 +896,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
     vendor.mediatek.hardware.mms@1.0 \
@@ -911,9 +905,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
-    vendor.mediatek.hardware.mtkradioex@2.0 \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.1 \
     vendor.mediatek.hardware.neuropilot.agent@1.2 \
@@ -937,7 +928,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.7 \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
-    vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -990,7 +980,6 @@ PRODUCT_PACKAGES += \
     manifest_apuware_utils.xml \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
-    vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     bip \
     bip_ap \
     ccci_mdinit \
@@ -1012,7 +1001,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.6-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
-    vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     ipsec_mon \
@@ -1198,7 +1186,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libTranFaceBeauty_so \
     vendor_lib64_libTranGenderDetect_so \
     vendor_lib64_libTranHumanLight_so \
-    vendor_lib64_libTranMegHumanEffect_so \
     vendor_lib64_libTranPlatHW_so \
     vendor_lib64_libTranSTPRRepair_so \
     vendor_lib64_libTranSTSingleBlur_so \
